@@ -66,8 +66,9 @@ REST_FRAMEWORK = {
     ]
 }
 
-DJOSER = {
-   "USER_ID_FIELD": "username"
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
 }
 
 CORS_ALLOWED_WHITELISTS = (
