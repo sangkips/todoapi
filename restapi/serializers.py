@@ -20,4 +20,4 @@ class GroupSerializer(serializers.ModelSerializer):
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
-        fields = ['title', 'task']
+        fields = '__all__'

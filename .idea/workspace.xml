@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cc8f631-223a-4bd1-81c2-e89c98760ea7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapi/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapi/migrations/0002_alter_todo_owner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapi/migrations/0003_alter_todo_owner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapi/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/restapi/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restapi/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/restapi/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/restapi/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restapi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/restapi/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todo/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
