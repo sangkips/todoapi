@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -8,7 +9,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-i@!u4%0yacwhd=gj5^9c1u**gd^(j*%8p34=6g%a-iw_1c=rlh'
+SECRET_KEY = os.getenv("SECRET_KEY")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -51,14 +53,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ]
 }
-    
-
-# CORS-Headers
-CORS_ALLOWED_ORIGINS = (
-    "http://localhost:8000",
-    "http://127.0.0.1:5000",
-)
-
 
 ROOT_URLCONF = 'todo.urls'
 
@@ -87,11 +81,11 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todoapi',
-        'USER': 'todouser',
-        'PASSWORD': 'password',
+        'NAME': 'api',
+        'USER': 'admin',
+        'PASSWORD': 'zx0011',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': 5432,
     }
 }
 
