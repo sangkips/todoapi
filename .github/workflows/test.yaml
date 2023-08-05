@@ -27,7 +27,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Tests
         env:
-          DJANGO_SETTINGS_MODULE: todo.settings
+          SECRET_KEY: $${{env.SECRET_KEY}}
           DB_NAME: ${{env.DB_NAME}}
           DB_USER: ${{env.DB_USER}}
           DB_PASSWORD: ${{env.DB_PASSWORD}}
