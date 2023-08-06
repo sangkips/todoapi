@@ -29,5 +29,14 @@ jobs:
         run: |
           cat .env | xargs -I {} echo "export {}" >> .env
       - name: Run tests
+        env:
+          DEBUG: "0"
+          SECRET_KEY: ${{ env.SECRET_KEY }}
+          DB_NAME: ${{ env.DB_NAME }}
+          DB_PASSWORD: ${{ env.DB_PASSWORD }}
+          DB_HOST: ${{ env.DB_HOST }}
+          DB_USER: ${{ env.DB_USER }}
+          DB_PORT: ${{ env.DB_PORT }}
+
         run: |
           python manage.py test
