@@ -28,12 +28,6 @@ jobs:
       - name: Load environment variables
         run: |
           cat .env | xargs -I {} echo "export {}" >> .env
-          
-          DJANGO_SETTINGS_MODULE: todo.settings
-      - name: Create and migrate database
-        run: |
-          python manage.py makemigrations
-          python manage.py migrate
       - name: Run tests
         run: |
           python manage.py test
